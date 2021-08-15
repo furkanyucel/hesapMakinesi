@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Hesap Makinesi</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body{
+        background: #292b2c	;
+        }
+
+        .result{
+        font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="hesapMakinesi p-5 rounded bg-info">
+                <h1 class="d-flex justify-content-center my-5 text-light">Hesap Makinesi</h1>
+
+                <p class="my-5 d-flex justify-content-center result text-light" id="result"></p>
+
+                <input class="w-100 p-3 border b-none rounded mb-2" type="text" name="Number1" id="number1">
+                <br>
+                <input class="w-100 p-3 border b-none rounded" type="text" name="Number2" id="number2">
+
+                <div class="mt-4 text-center">
+                    <button class="mx-2 border b-none bg-info text-light px-3 py-2 rounded" id="topla"><i class="fas fa-plus fa-2x"></i></button>
+                    <button class="mx-2 border b-none bg-info text-light px-3 py-2 rounded" id="cikar"><i class="fas fa-minus fa-2x"></i></button>
+                    <button class="mx-2 border b-none bg-info text-light px-3 py-2 rounded" id="carp"><i class="fas fa-times fa-2x"></i></button>
+                    <button class="mx-2 border b-none bg-info text-light px-3 py-2 rounded" id="bol"><i class="fas fa-percentage fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/hesapMakinesi.js"></script>
+</body>
+</html>
